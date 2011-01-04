@@ -43,8 +43,6 @@ unisanniogmuBoxMenu.appendChild(unisanniogmuBoxMenuContent);
 unisanniogmuBoxMenuContent.appendChild(unisanniogmuBoxMenuList);
 unisanniogmuBoxMenuList.appendChild(emailLinkListItem);
 
-//GM_registerMenuCommand( "Pippo", pippo); 
-
 GM_xmlhttpRequest({
 	method: "post",
 	url: "https://webmail.studenti.unisannio.it/imp/index.php",
@@ -62,6 +60,8 @@ GM_xmlhttpRequest({
 	}
 });
 
+// UserScript menu draft
+GM_registerMenuCommand( "Options", pippo); 
 function pippo(){
-    alert('yeah');
+    alert('Options panel - place holder');
 }
